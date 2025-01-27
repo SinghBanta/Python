@@ -376,6 +376,36 @@
 
 # print(unique_set)
 
+#swap values of a and b
+# a=10
+# b=20
+# temp=a #or a,b=b,a
+# a=b
+# b=temp
+# print(a,b)
+
+#Convert float to integer
+# a=9.1
+# a=int(a)
+# print(a)
+
+
+#write a program to take details from a student Id card 
+
+# name=input("Enter your name: ")
+# roll_no=int(input("Enter your roll: "))
+# age=int(input("Enter your age: "))
+#print(name)
+#print(roll_no)
+#print(age)
+
+
+#write a program to take from user as input in integer and convert to float
+
+# number=int(input("Enter your number"))
+# result=float(number)
+# print(result)
+
 
 
 

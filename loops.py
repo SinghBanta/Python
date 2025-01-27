@@ -75,7 +75,8 @@
 # for i in range(1, num+1):
 #     factorial = factorial * i  # Multiply the current number with the factorial
 #     print(factorial)
-    
+
+
 
 
 
