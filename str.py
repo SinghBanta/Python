@@ -92,6 +92,55 @@
 
 
 
+#Question asked by companies like grab,intuit and sprinkler on coding ninja.
+# Example :
+# Let S = “c1 O$d@eeD o1c”.
+# If we ignore the special characters, whitespaces and convert all uppercase letters to lowercase, we get S = “c1odeedo1c”, which is a palindrome. Hence, the given string is also a palindrome.
+
+
+
+# def checkPalindrome(str):
+#     str=''.join(char.lower() for char in str if char.isalnum())#The ''.join(...) function joins the filtered lowercase characters into a new string.The empty string ('') is the separator, so the characters are combined without any spaces.
+#     #The ''.join(...) function joins the filtered lowercase characters into a new string.
+#     # The empty string ('') is the separator, so the characters are combined without any spaces.
+    
+#     l=0
+#     r=len(str)-1
+    
+#     while(l<r):
+#         if(str[l]!=str[r]):
+#             return False
+#         l+=1
+#         r-=1
+#         return True
+    
+    
+# str= 'c1 O$d@eeD o1c'#it have special character as well as space
+# print(checkPalindrome(str))
+
+
+
+#binary tree at coding ninja
+
+# def printPatt(n):
+#     for i in range(n):
+#         for j in range(n-i):
+#             if(i%2==0):
+#                 print('1',end="")
+#             else:
+#                 print('0',end="")
+#         print("\n")
+        
+
+# n=4
+# print(printPatt(n))
+
+
+
+
+
+
+
 
 
         
