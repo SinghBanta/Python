@@ -119,6 +119,37 @@
 # print(checkPalindrome(str))
 
 
+#Convert uppercase character to lower case using ASCII value.
+#lowecase letters range 97-122 and uppercase letter range 65-90
+#To convert in lowercase +32 and to convert in uppercase -32
+
+# char=input("Enter a character: ")
+# if 'a' <= char <= 'z':
+#     char = chr(ord(char)-32)
+# elif 'A' <= char <= 'Z':
+#     char = chr(ord(char)+32)
+# print("Converted character:", char)
+
+
+
+#Convert uppercase character to lower case using ASCII value.
+
+# sent = input("Enter a string: ")
+# converted_str = ""
+
+# for char in sent:
+#     if 'a' <= char <= 'z':
+#         converted_str += chr(ord(char) - 32)
+#     elif 'A' <= char <= 'Z':
+#         converted_str += chr(ord(char) + 32)
+#     else:
+#         converted_str += char
+
+# print("Converted string:", converted_str)
+
+
+
+
 
 
 
