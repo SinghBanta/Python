@@ -1,3 +1,126 @@
+#Methods used in string
+
+#capitalize()
+
+# str="My name is BANTA singh"
+# print(str.capitalize())
+
+#casefold(), lower() work same
+ 
+# str="My name IS BANTA singh"
+# print(str.casefold())
+# print(str.lower())
+
+#casefold(), lower() work same but there is difference between them that is
+ 
+# str = "My name is Banta ßingh"
+# print(str.lower())
+# print(str.casefold())
+
+#center()
+
+# str="My name is Banta Singh"
+# print(str.center(100,"-"))
+
+
+#count()
+
+# str="hello world"
+# print(str.count('o'))
+
+#Alternate way to count
+
+# str="hello world"
+# count=0
+
+# for i in range(len(str)):
+#     if(str[i] == 'o'):
+#         count=count+1
+        
+# print(count)  
+
+
+# Count Substring Occurrences with Start and End parameter
+
+# s = "apple banana apple grape apple"
+# substring = "apple"
+
+# # Using start and end parameters to count occurrences 
+# # of "apple" within a specific range
+# res = s.count(substring, 1, 30)  
+
+# print(res)
+
+#encode() 
+#This method in Python is used to convert a string into bytes using a specified encoding format. This method is beneficial when working with data that needs to be stored or transmitted in a specific encoding format, such as UTF-8, ASCII, or others
+
+# Encoding a string with UTF-8
+# a = "Python is fun!"
+# utf8_encoded = a.encode("utf-8")
+# print(utf8_encoded)
+
+
+#Encoding with ASCII and handling errors
+# a = "Pythön"
+# encoded_ascii = a.encode("ascii", errors="replace")
+# print(encoded_ascii)
+
+# Encoding with XML character references
+# a = "Pythön"
+# encoded_xml = a.encode("ascii", errors="xmlcharrefreplace")
+# print(encoded_xml)
+
+# Using backslash escapes
+# a = "Pythön"
+# encoded_backslash = a.encode("ascii", errors="backslashreplace")
+# print(encoded_backslash)
+
+
+#endswith(suffix, start, end)
+# s = "BantasinghBanta"
+# res = s.endswith(("Banta", "com", "org"))
+# print(res)  # This will print True because 'geeks' is one of the options
+
+# Alternate way to write this endswith() code
+# s = "BantasinghBanta"
+# suffixes = ("Banta", "com", "org")
+# res = any(s[-len(suffix):] == suffix for suffix in suffixes)
+# print(res)  # This will print True because 'Banta' is one of the options
+
+
+#Alternate way to write this startswith() code without using startswith() function.
+# s = "BantasinghBanta"
+# prefixes = ("Banta", "com", "org")
+# result = any(s[:len(prefix)] == prefix for prefix in prefixes)
+# print(result)
+
+
+#s.find(substring, start, end))
+
+# s = "abc abc abc"
+# index = s.find("abc", 4)
+# print(index)  # This will print 8
+
+#Alternate way to write this find() code without using find() function.
+# s = "abc def ghi"
+
+# for i in range(len(s)):
+#     if s[i:i+3] == "ghi":
+#         print(i)
+
+
+#Example
+# Function Execution: When the function is executed with these arguments, it calculates the sum 1 + 2 + 1 + 7, which equals 11. This result is returned by the function and stored in the variable value.
+
+# def function(a,b,c=1,d=5):
+
+#     return a+b+c+d
+
+# #Driver's code
+# value = function(1,2,d=7)
+# print(value)
+        
+               
 #Question on string.
 
 #take a input as string and then count how many lowercase ,uppercase and digit's count.
@@ -146,6 +269,50 @@
 #         converted_str += char
 
 # print("Converted string:", converted_str)
+
+
+#Input a string and count vowels,consonent,special chararcter and space.
+# str=input("Enter a string")
+# special_char_count = 0
+# consonant_count = 0
+# vowel_count = 0
+# space_count = 0
+
+# vowels = "aeiouAEIOU"
+
+# for char in str:
+#     if char in vowels:
+#         vowel_count += 1
+#     elif char.isalpha():
+#         consonant_count += 1
+#     elif char.isspace():
+#         space_count += 1
+#     else:
+#         special_char_count += 1
+
+# print("Special characters:", special_char_count)
+# print("Consonants:", consonant_count)
+# print("Vowels:", vowel_count)
+# print("Spaces:", space_count)
+
+#take input as string and then convert first character of every word in uppercase.
+# def convertString(str):
+#     result = ""
+#     n = len(str)
+#     for i in range(n):
+#         if i==0 or str[i-1]==' ':
+#             result+=str[i].upper()
+#         else:
+#             result+=str[i]
+#     return result
+
+# str=input("Enter a string: ")
+# print(convertString(str))
+
+
+
+
+
 
 
 
