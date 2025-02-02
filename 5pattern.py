@@ -227,6 +227,22 @@
 #     print()         
     
 
-  
+#alternate way to print pattern,coding ninja question.
+# *****
+# ****
+# ***
+# **
+# *
+
+# n=5
+# res=[]
+
+# pattern="*"*n
+# for i in range(1,n+1):
+#     res.append(pattern)
+#     print(pattern)
+#     pattern=pattern[:-1]
+
+
         
 
