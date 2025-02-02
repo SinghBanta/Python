@@ -1,3 +1,5 @@
+from itertools import permutations
+
 #Methods used in string
 
 #capitalize()
@@ -120,7 +122,7 @@
 # value = function(1,2,d=7)
 # print(value)
         
-               
+                
 #Question on string.
 
 #take a input as string and then count how many lowercase ,uppercase and digit's count.
@@ -308,6 +310,53 @@
 
 # str=input("Enter a string: ")
 # print(convertString(str))
+
+
+#print least maximum 
+# def find_previous_permutation(num):
+#     num_str = str(num)
+#     perms = sorted(set(int("".join(p)) for p in permutations(num_str)))
+#     for i in range(len(perms)):
+#         if perms[i] == num:
+#             return perms[i-1] if i > 0 else None
+
+# num = int(input("Enter a number: "))
+# result = find_previous_permutation(num)
+# print(result)
+
+
+#Alternate way to print least maximum
+# num = int(input("Enter a number: "))
+# num_str = str(num)
+# perms = sorted(set(int("".join(p)) for p in permutations(num_str)))
+# for i in range(len(perms)):
+#     if perms[i] == num:
+#         print( perms[i-1]) if i>0 else None
+
+
+# Function to reverse a string after removing '0', '1', '2', '3'
+# def reverse_string_excluding_chars(s):
+#     # Remove '0', '1', '2', '3' from the string
+#     filtered_str = ''.join(c for c in s if c not in '0123')
+#     # Reverse the filtered string
+#     reversed_str = filtered_str[::-1]
+#     # Remove the first four characters one by one
+#     final_str = reversed_str[4:]
+#     return final_str
+
+# Take input from the user
+# input_str = input("Enter a string: ")
+# # Get the final reversed string
+# result = reverse_string_excluding_chars(input_str)
+# # Print the final string
+# print("Final string:", result)
+             
+             
+
+
+
+
+
 
 
 
